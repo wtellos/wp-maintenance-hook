@@ -32,4 +32,6 @@ function tt_maintenance_mode() {
     }
 }
 
-// Hook the function /add_action('wp', 'tt_maintenance_mode');
+// Hook the function /
+add_action('wp', 'tt_maintenance_mode');
+
