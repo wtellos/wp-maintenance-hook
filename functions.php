@@ -20,8 +20,8 @@ function tt_maintenance_mode() {
               </style>';
         echo '</head>';
         echo '<body>';
-        echo '<img style="width: 200px;" src="https://www.elearning.greenyouproject.eu/wp-content/uploads/2024/05/logo-header-hp.svg"/>';
-        echo '<h1>GreenYou will be back soon!</h1>';
+        echo '<img style="width: 200px;" src="' . get_site_icon_url() . '"/>';
+        echo '<h1>' . get_bloginfo('name') . ' will be back soon!</h1>';
         echo '<p>Our website is currently undergoing scheduled maintenance.</p>';
         echo '<p>Sorry for the inconvenience. Please check back later.</p>';
         echo '</body>';
@@ -32,5 +32,4 @@ function tt_maintenance_mode() {
     }
 }
 
-// Hook the function
-add_action('wp', 'tt_maintenance_mode');
+// Hook the function /add_action('wp', 'tt_maintenance_mode');
